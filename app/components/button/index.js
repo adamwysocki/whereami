@@ -1,4 +1,4 @@
-'user strict';
+'use strict';
 /**
  * button component
  * @flow
@@ -11,6 +11,8 @@ import {
   Text,
   View
 } from 'react-native';
+
+import styles from './styles';
 
 export default class Button extends Component {
   render() {
@@ -27,20 +29,3 @@ export default class Button extends Component {
 Button.propTypes = {
     onPress: React.PropTypes.func.isRequired
 };
-
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#0000FF',
-    height: 50,
-    width: 250,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 5
-  },
-  label: {
-    textAlign: 'center',
-    color: 'white',
-    fontWeight: '900'
-  }
-});

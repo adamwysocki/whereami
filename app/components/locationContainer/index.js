@@ -1,4 +1,4 @@
-'user strict';
+'use strict';
 /**
  * locationContainer component
  * @flow
@@ -14,6 +14,7 @@ import {
 
 import Location from '../location';
 import getBaseLocation from '../../api/getBaseLocation';
+import styles from './styles';
 
 export default class LocationContainer extends Component {
 
@@ -54,19 +55,3 @@ LocationContainer.PropTypes = {
   latitude: React.PropTypes.number.isRequired,
   longitude: React.PropTypes.number.isRequired
 }
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#0000FF',
-    height: 50,
-    width: 250,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 5
-  },
-  label: {
-    textAlign: 'center',
-    color: 'white',
-    fontWeight: '900'
-  }
-});

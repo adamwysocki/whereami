@@ -1,7 +1,8 @@
-'user strict';
+'use strict';
 /**
  * whereami component
  * @flow
+ *
  * Google Places API Key AIzaSyCsy8VXr84z-pKP54gTc6X-PZtbTOBCj8A
  */
 
@@ -13,19 +14,22 @@ import {
   Navigator
 } from 'react-native';
 
+// import components
 import Button from '../button';
 import LocationContainer from '../locationContainer';
+import styles from './styles';
 
 export default class whereami extends Component {
 
   constructor(props) {
     super(props);
+    // set some initial state
     this.state = {
-      initialPosition: 'unknown',
-      lastPosition: 'unknown',
-      showing: false,
-      latitude: 0,
-      longitude: 0
+      initialPosition: props.initialPosition || 'unknown',
+      lastPosition: props.lastPosition || 'unknown',
+      showing: props.showing || false,
+      latitude: props.latitude || 0,
+      longitude: props.longitude || 0
     };
   }
 
@@ -34,6 +38,22 @@ export default class whereami extends Component {
     this._updateLocation();
   }
 
+  // configure and return the top nav bar
+  _getTopNavBar() {
+    return (
+      <Navigator.NavigationBar
+        routeMapper={{
+          LeftButton: (route, navigator, index, navState) => { },
+          RightButton: (route, navigator, index, navState) => { },
+          Title: (route, navigator, index, navState) =>
+            { return (<Text style={styles.title}>Where Am I?</Text>); },
+        }}
+        style={{backgroundColor: 'gray'}}
+        />
+    );
+  }
+
+  // use geolocation service to get lat/lng
   _updateLocation() {
     navigator.geolocation.getCurrentPosition(
       (position) => {
@@ -47,6 +67,7 @@ export default class whereami extends Component {
     );
   }
 
+  // toggle whether we're showing the location
   _wherePressed() {
     this.setState({showing: !this.state.showing});
   }
@@ -54,6 +75,7 @@ export default class whereami extends Component {
   render() {
     var visibleComponent;
 
+    // if "showing" then show the location, otherwise initial view
     if(this.state.showing) {
       visibleComponent = <LocationContainer
                           latitude={this.state.latitude}
@@ -71,34 +93,8 @@ export default class whereami extends Component {
             {visibleComponent}
           </View>
         }
-        navigationBar={
-           <Navigator.NavigationBar
-             routeMapper={{
-               LeftButton: (route, navigator, index, navState) => { },
-               RightButton: (route, navigator, index, navState) => { },
-               Title: (route, navigator, index, navState) =>
-                 { return (<Text style={styles.title}>Where Am I?</Text>); },
-             }}
-             style={{backgroundColor: 'gray'}}
-           />
-        }
+        navigationBar={this._getTopNavBar()}
       />
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginTop: 20,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#FFFFFF',
-  },
-  title: {
-    color: '#ffffff',
-    fontWeight: '900',
-    marginTop: 10,
-    fontSize: 18
-  }
-});

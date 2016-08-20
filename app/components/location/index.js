@@ -1,4 +1,4 @@
-'user strict';
+'use strict';
 /**
  * currentLocation component
  * @flow
@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 
 import Button from '../button';
+import styles from './styles';
 
 export default class Location extends Component {
 
@@ -36,19 +37,3 @@ Location.propTypes = {
     country: React.PropTypes.string.isRequired,
     onPress: React.PropTypes.func.isRequired
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    marginTop: 70,
-  },
-  heading: {
-    textAlign: 'center',
-    color: '#000000',
-    fontWeight: '900',
-    marginBottom: 70,
-    fontSize: 22
-  }
-});
