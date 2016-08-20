@@ -1,30 +1,27 @@
 'use strict';
 /**
- * button component
+ * button pure component
  * @flow
  */
 
 import React, { Component } from 'react';
 import {
   TouchableHighlight,
-  StyleSheet,
   Text,
   View
 } from 'react-native';
 
 import styles from './styles';
 
-export default class Button extends Component {
-  render() {
-    return (
-      <TouchableHighlight onPress={this.props.onPress}>
-        <View style={styles.container}>
-          <Text style={styles.label}>{this.props.children}</Text>
-        </View>
-      </TouchableHighlight>
-    );
-  }
-}
+const Button = ({children, onPress}) => (
+  <TouchableHighlight onPress={onPress}>
+    <View style={styles.container}>
+      <Text style={styles.label}>{children}</Text>
+    </View>
+  </TouchableHighlight>
+)
+
+export default Button;
 
 Button.propTypes = {
     onPress: React.PropTypes.func.isRequired

@@ -5,12 +5,6 @@
  */
 
 import React, { Component } from 'react';
-import {
-  TouchableHighlight,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
 
 import Location from '../location';
 import getBaseLocation from '../../api/getBaseLocation';

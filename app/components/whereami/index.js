@@ -7,12 +7,7 @@
  */
 
 import React, { Component } from 'react';
-import {
-  StyleSheet,
-  Text,
-  View,
-  Navigator
-} from 'react-native';
+import { View, Navigator, Text } from 'react-native';
 
 // import components
 import Button from '../button';

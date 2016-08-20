@@ -5,12 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import {
-  TouchableHighlight,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { Text, View } from 'react-native';
 
 import Button from '../button';
 import styles from './styles';
