@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1471666856272" clover="3.2.0">
+	<project timestamp="1471666856272"  name="All Files" >
+		<metrics statements="55"  coveredstatements="55"  conditionals="97"  coveredconditionals="59"  methods="40"  coveredmethods="40"  elements="192"  coveredelements="154"  complexity="0"  packages="4"  files="4"  classes="4"  loc="171"  ncloc="171" />
+		<package name="api" >
+			<metrics statements="16"  coveredstatements="16"  conditionals="2"  coveredconditionals="2"  methods="8"  coveredmethods="8" />
+			<file name="getBaseLocation.js"  path="/Users/adamwysocki/projects/whereami/app/api/getBaseLocation.js" >
+				<metrics statements="16"  coveredstatements="16"  conditionals="2"  coveredconditionals="2"  methods="8"  coveredmethods="8" />
+				<line num="1"  count="2"  type="stmt" />
+				<line num="5"  count="4"  type="stmt" />
+				<line num="6"  count="4"  type="stmt" />
+				<line num="7"  count="4"  type="stmt" />
+				<line num="10"  count="4"  type="stmt" />
+				<line num="11"  count="3"  type="stmt" />
+				<line num="13"  count="3"  type="stmt" />
+				<line num="15"  count="2"  type="stmt" />
+				<line num="16"  count="2"  type="stmt" />
+				<line num="17"  count="2"  type="stmt" />
+				<line num="18"  count="2"  type="stmt" />
+				<line num="21"  count="1"  type="stmt" />
+				<line num="26"  count="1"  type="stmt" />
+				<line num="33"  count="2"  type="stmt" />
+				<line num="37"  count="2"  type="stmt" />
+				<line num="41"  count="2"  type="stmt" />
+			</file>
+		</package>
+		<package name="components.button" >
+			<metrics statements="8"  coveredstatements="8"  conditionals="31"  coveredconditionals="18"  methods="10"  coveredmethods="10" />
+			<file name="index.js"  path="/Users/adamwysocki/projects/whereami/app/components/button/index.js" >
+				<metrics statements="8"  coveredstatements="8"  conditionals="31"  coveredconditionals="18"  methods="10"  coveredmethods="10" />
+				<line num="1"  count="3"  type="stmt" />
+				<line num="7"  count="3"  type="stmt" />
+				<line num="8"  count="3"  type="stmt" />
+				<line num="15"  count="3"  type="stmt" />
+				<line num="17"  count="6"  type="stmt" />
+				<line num="24"  count="3"  type="stmt" />
+				<line num="27"  count="3"  type="stmt" />
+				<line num="32"  count="3"  type="stmt" />
+			</file>
+		</package>
+		<package name="components.location" >
+			<metrics statements="11"  coveredstatements="11"  conditionals="31"  coveredconditionals="19"  methods="10"  coveredmethods="10" />
+			<file name="index.js"  path="/Users/adamwysocki/projects/whereami/app/components/location/index.js" >
+				<metrics statements="11"  coveredstatements="11"  conditionals="31"  coveredconditionals="19"  methods="10"  coveredmethods="10" />
+				<line num="1"  count="2"  type="stmt" />
+				<line num="7"  count="2"  type="stmt" />
+				<line num="8"  count="2"  type="stmt" />
+				<line num="15"  count="4"  type="stmt" />
+				<line num="17"  count="2"  type="stmt" />
+				<line num="19"  count="2"  type="stmt" />
+				<line num="21"  count="2"  type="stmt" />
+				<line num="24"  count="5"  type="stmt" />
+				<line num="30"  count="2"  type="stmt" />
+				<line num="33"  count="2"  type="stmt" />
+				<line num="40"  count="2"  type="stmt" />
+			</file>
+		</package>
+		<package name="components.locationContainer" >
+			<metrics statements="20"  coveredstatements="20"  conditionals="33"  coveredconditionals="20"  methods="12"  coveredmethods="12" />
+			<file name="index.js"  path="/Users/adamwysocki/projects/whereami/app/components/locationContainer/index.js" >
+				<metrics statements="20"  coveredstatements="20"  conditionals="33"  coveredconditionals="20"  methods="12"  coveredmethods="12" />
+				<line num="1"  count="2"  type="stmt" />
+				<line num="7"  count="1"  type="stmt" />
+				<line num="8"  count="1"  type="stmt" />
+				<line num="15"  count="1"  type="stmt" />
+				<line num="16"  count="3"  type="stmt" />
+				<line num="18"  count="1"  type="stmt" />
+				<line num="20"  count="1"  type="stmt" />
+				<line num="22"  count="1"  type="stmt" />
+				<line num="25"  count="1"  type="stmt" />
+				<line num="27"  count="1"  type="stmt" />
+				<line num="29"  count="1"  type="stmt" />
+				<line num="31"  count="1"  type="stmt" />
+				<line num="33"  count="1"  type="stmt" />
+				<line num="34"  count="1"  type="stmt" />
+				<line num="35"  count="1"  type="stmt" />
+				<line num="36"  count="1"  type="stmt" />
+				<line num="42"  count="4"  type="stmt" />
+				<line num="49"  count="1"  type="stmt" />
+				<line num="52"  count="1"  type="stmt" />
+				<line num="58"  count="1"  type="stmt" />
+			</file>
+		</package>
+	</project>
+</coverage>

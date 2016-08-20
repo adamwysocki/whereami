@@ -1,0 +1,59 @@
+exports[`locationContainer renders correctly 1`] = `
+<div
+  className="View"
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "flex-start",
+      "marginTop": 70
+    }
+  }>
+  <div
+    className="Text"
+    style={
+      Object {
+        "color": "#000000",
+        "fontSize": 22,
+        "fontWeight": "900",
+        "marginBottom": 70,
+        "textAlign": "center"
+      }
+    }>
+    unknown
+    , 
+    unknown
+     
+    unknown
+  </div>
+  <div
+    className="TouchableHighlight"
+    onClick={[Function onPress]}
+    onPress={[Function onPress]}>
+    <div
+      className="View"
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#0000FF",
+          "borderRadius": 5,
+          "height": 50,
+          "justifyContent": "center",
+          "width": 250
+        }
+      }>
+      <div
+        className="Text"
+        style={
+          Object {
+            "color": "white",
+            "fontWeight": "900",
+            "textAlign": "center"
+          }
+        }>
+        RESET
+      </div>
+    </div>
+  </div>
+</div>
+`;
